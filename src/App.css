@@ -1,0 +1,209 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+.main-container-for-weeks {
+  display: flex;
+  justify-content: space-between;
+} 
+.dayOfTheWeek {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.ingredients {
+  align-self: center;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.textarea {
+  width: 80%;
+  height: 100px;
+}
+.inputForAWeek {
+  width: 250px;
+  font-size: 13px;
+}
+.lableForAWeek {
+  font-size: 13px;
+}
+.form {
+  border: 1px solid black;
+  padding: 10px;
+  width: 47%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.delete-icon-position {
+  text-align: end;
+}
+.delete-icon:hover {
+  cursor: pointer;
+}
+.important {
+  color: red;
+  font-size: 20px;
+}
+.btn-save-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.weeks {
+  margin-left: 10px;
+  width: 30%;
+}
+.week-name-container {
+  display: flex;
+  justify-content: center;
+}
+
+.week-name {
+  margin-left: 10px;
+}
+select {
+  border: none;
+  font-size: 15px;
+  background-color: antiquewhite;
+}
+.day-name-style {
+  background: #a3d0e4;
+}
+.label-position {
+  margin-left: 20px;
+}
+.edit-delete-btn {
+  color:white;
+}
+.edit-delete-btn:hover {
+  color: rgb(214, 112, 137);
+}
+
+.shopping-list-container {
+  margin-right: 15px;
+  background: #227093;
+  padding: 5px;
+  width: 20%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab .input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab .input:checked ~ .tab__content {
+  max-height: 100rem;
+}
+.accordion {
+  color: #227093;
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.tab__label {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: #227093;
+  cursor: pointer;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  margin-top: 15px;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab .input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p, h4 {
+  margin: 0;
+  padding: 1rem;
+}
+.tab .input:not(:checked) + .tab__label:hover::after {
+  animation: bounce .5s infinite;
+}
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}
+.quantity  {
+  width: 30px;
+  background: #9ab1bc;
+  border: none;
+}
+.qty {
+  width: 40px;
+  background: #227093;
+}
+.span {
+  margin-left: 5px;
+}
+
+
+
+/*
+.accordion {
+  border: 2px solid lightgray;
+  overflow: hidden;
+  background-color: lightgray;
+
+}
+
+.accordion input[type="checkbox"] {
+  display: none;
+}
+
+.accordion label {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.accordion:hover {
+  background-color: lightblue;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  animation: fadeIn 0.3s ease; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.accordion input[type="checkbox"]:checked ~ .accordion-content {
+  display: block;
+}
+
+659c96eadd460b96b6efcda2*/
